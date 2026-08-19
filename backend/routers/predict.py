@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from schemas.prediction import PredictionRequest, PredictionResponse
-from core import ml
+from backend.schemas.prediction import PredictionRequest, PredictionResponse
+from backend.core import ml
 
 router = APIRouter(
     prefix="/predict",

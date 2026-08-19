@@ -23,10 +23,5 @@ webapp/.idea/misc.xml
 webapp/.idea/inspectionProfiles/Project_Default.xml
 webapp/.idea/inspectionProfiles/profiles_settings.xml
 webapp/.idea/copilot.data.migration.ask2agent.xml
-.idea/vcs.xml
-.idea/modules.xml
-.idea/misc.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/inspectionProfiles/profiles_settings.xml
-.idea/copilot.data.migration.ask2agent.xml
-.idea/authorship_verification_dt.iml
+
+.idea/

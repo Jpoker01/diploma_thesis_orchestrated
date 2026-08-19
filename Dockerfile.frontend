@@ -1,0 +1,18 @@
+FROM node:20-alpine AS builder
+WORKDIR /app
+
+#copy manifests first to install dependencies
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci
+
+#copy other source files
+COPY frontend/ ./
+RUN npm run build
+
+FROM nginx:alpine
+#copy only source files to the folder with source files served to the users
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+

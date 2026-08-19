@@ -1,0 +1,20 @@
+name: diploma-thesis
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    image: diploma-thesis/backend:dev
+    ports: 
+      - "8000:8000" 
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    image: diploma-thesis/frontend:dev
+    ports: 
+      - "8080:80" 
+    depends_on:
+      - backend

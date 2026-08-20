@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: diplomathesisorchestratedjp.azurecr.io/frontend:v1
+          image: diplomathesisorchestratedjp.azurecr.io/frontend:v2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
